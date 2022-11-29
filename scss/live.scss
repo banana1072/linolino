@@ -1,0 +1,125 @@
+@import "common";
+@include common(rgb(255, 120, 80));
+@include footer;
+@include hr(rgb(255, 120, 80));
+section {
+    padding-top: 70px;
+    @include h-1;
+    @include sns;
+    .live-wrapper {
+        width: 70%;
+        margin: 0 auto;
+        ul {
+            margin-top: 70px;
+            li {
+                margin-bottom: 50px;
+                .title {
+                    border-bottom: 1px solid white;
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: Arial Black;
+                    font-weight: 900;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    .title-top {
+                        display: flex;
+                        width: 100%;
+                        p {
+                            font-size: 1.5rem;
+                            line-height: 45px;
+                            margin-right: 10%;
+                            width: 10%;
+                        }
+                        h2 {
+                            font-size: 2.0rem;
+                            width: 80%;
+                            text-align: left;
+                        }
+                    }
+                    .fa-plus {
+                        font-size: 2rem;
+                        cursor: pointer;
+                        transition: .5s;
+                    }
+                    .fa-plus.active {
+                        transform: rotate(225deg);
+                    }
+                }
+                .title-exp {
+                    font-family: 游ゴシック体;
+                    text-align: left;
+                    width: 100%;
+                    font-weight: 100;
+                    line-height: 25px;
+                    display: none;
+                    a {
+                        transition: .5s;
+                    }
+                    a:hover {
+                        color: rgb(200, 200, 200)
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:525px) and(max-width:1000px) {
+    @include sp_common;
+    .live-wrapper {
+        ul {
+            li {
+                .title {
+                    .title-top {
+                        flex-direction: column;
+                        h2 {
+                            width: 90%!important;
+                            font-size: 1.7rem!important;
+                        }
+                    }
+                    i {
+                        height: 30px;
+                        position: relative;
+                        top: 35px;
+                    }
+                    .second-plus {
+                        top: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:525px) {
+    .left-name-wrapper {
+        display: none;
+    }
+    @include sp_nav_sns;
+    .live-wrapper {
+        ul {
+            li {
+                .title {
+                    .title-top {
+                        flex-direction: column;
+                        h2 {
+                            width: 90%!important;
+                            font-size: 1.4rem!important;
+                        }
+                        p {
+                            font-size: 1.2rem!important;
+                        }
+                    }
+                    i {
+                        height: 30px;
+                        position: relative;
+                        top: 35px;
+                    }
+                    .second-plus {
+                        top: 65px;
+                    }
+                }
+            }
+        }
+    }
+}

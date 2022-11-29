@@ -1,0 +1,10 @@
+create table columns (
+    `id` int(11) primary key auto_increment,
+    `title` varchar(255) NOT NULL,
+    `content` varchar(2000) NOT NULL
+ );
+
+INSERT INTO columns (`id`, `title`, `content`) VALUES
+(1, 'テスト1', 'テスト'),
+(2, 'テスト2', 'テスト'),
+(3, 'テスト3', 'テスト');

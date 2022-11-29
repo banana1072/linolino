@@ -1,0 +1,212 @@
+@import "common";
+
+/*-------------------------共通------------------------*/
+
+html {
+    font-size: 16px;
+    font-family: Arial Black;
+}
+
+body {
+    background-color: #FABFFF;
+    color: rgb(251, 246, 253);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section {
+    overflow-x: hidden;
+}
+
+
+/*----------------------見出し-----------------------*/
+
+.navi {
+    display: none;
+}
+
+#top {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+    .sns {
+        display: none;
+    }
+    .container {
+        .title {
+            .title-top {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                left: 5%;
+                h1 {
+                    font-size: 5rem;
+                    letter-spacing: 10px;
+                    line-height: 120px;
+                }
+                img {
+                    width: auto;
+                    height: 120px;
+                    position: relative;
+                    top: -20px;
+                    animation: bound 3s infinite;
+                }
+            }
+            p {
+                margin: 0 auto;
+                font-size: 1.5rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+@keyframes bound {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/*----------------------メイン-----------------------*/
+
+#main {
+    padding-top: 70px;
+    .container {
+        .content {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            .content {
+                ul {
+                    li {
+                        margin-top: 75px;
+                        h2 {
+                            font-size: 2.3rem;
+                            transition: .5s;
+                        }
+                        h2:hover {
+                            color: #EC6637;
+                        }
+                    }
+                    li:nth-child(1) {
+                        margin-top: 0;
+                    }
+                }
+            }
+            .left {
+                width: 30%;
+            }
+            img {
+                width: auto;
+                height: 380px;
+                border-radius: 30px;
+                margin: 0 3%;
+            }
+            .right {
+                width: 30%;
+            }
+        }
+        @include sns;
+    }
+}
+
+.loader {
+    display: none;
+}
+
+@media screen and(min-width:525px) and (max-width:1000px) {
+    @include sp_common;
+    .navi {
+        display: block;
+    }
+    @include index-nav;
+    .top-nav {
+        display: none;
+    }
+    #top {
+        height: 100vh;
+        padding: 0;
+        border: none;
+        .container {
+            .title {
+                .title-top {
+                    left: 0;
+                    top: 80px;
+                    flex-direction: column-reverse;
+                    img {
+                        height: 500px;
+                        margin: 0 auto;
+                    }
+                }
+                p {
+                    position: relative;
+                    top: 80px;
+                }
+            }
+            .sns {
+                display: block;
+                margin-top: 135px!important;
+            }
+            @include sns;
+        }
+    }
+    #main {
+        display: none;
+    }
+}
+
+@media screen and (max-width:525px) {
+    @include sp_common;
+    @include sp_nav_sns;
+    #main {
+        display: none;
+    }
+    @include sp_common;
+    .navi {
+        display: block;
+    }
+    @include index-nav;
+    .top-nav {
+        display: none;
+    }
+    #top {
+        height: 100vh;
+        padding: 0;
+        border: none;
+        .container {
+            .title {
+                .title-top {
+                    left: 0;
+                    top: 160px;
+                    flex-direction: column-reverse;
+                    img {
+                        height: 350px;
+                        margin: 0 auto;
+                    }
+                }
+                p {
+                    position: relative;
+                    top: 160px;
+                }
+            }
+            .sns {
+                display: block;
+                margin-top: 205px!important;
+            }
+            @include sns;
+        }
+    }
+}

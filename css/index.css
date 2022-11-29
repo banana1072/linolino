@@ -1,0 +1,515 @@
+@charset "UTF-8";
+/*共通レイアウト*/
+/*レスポンシブ対応(スマホのみ)*/
+/*-------------------------共通------------------------*/
+html {
+  font-size: 16px;
+  font-family: Arial Black;
+}
+
+body {
+  background-color: #FABFFF;
+  color: rgb(251, 246, 253);
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  overflow-x: hidden;
+}
+
+/*----------------------見出し-----------------------*/
+.navi {
+  display: none;
+}
+
+#top {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid white;
+}
+#top .sns {
+  display: none;
+}
+#top .container .title .title-top {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 5%;
+}
+#top .container .title .title-top h1 {
+  font-size: 5rem;
+  letter-spacing: 10px;
+  line-height: 120px;
+}
+#top .container .title .title-top img {
+  width: auto;
+  height: 120px;
+  position: relative;
+  top: -20px;
+  -webkit-animation: bound 3s infinite;
+          animation: bound 3s infinite;
+}
+#top .container .title p {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+@-webkit-keyframes bound {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bound {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*----------------------メイン-----------------------*/
+#main {
+  padding-top: 70px;
+}
+#main .container .content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#main .container .content .content ul li {
+  margin-top: 75px;
+}
+#main .container .content .content ul li h2 {
+  font-size: 2.3rem;
+  transition: 0.5s;
+}
+#main .container .content .content ul li h2:hover {
+  color: #EC6637;
+}
+#main .container .content .content ul li:nth-child(1) {
+  margin-top: 0;
+}
+#main .container .content .left {
+  width: 30%;
+}
+#main .container .content img {
+  width: auto;
+  height: 380px;
+  border-radius: 30px;
+  margin: 0 3%;
+}
+#main .container .content .right {
+  width: 30%;
+}
+#main .container .sns {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-top: 0;
+}
+#main .container .sns li i {
+  font-size: 2.5rem;
+  transition: 0.5s;
+}
+#main .container .sns li .fa-twitter:hover {
+  color: rgb(29, 161, 241);
+}
+#main .container .sns li .fa-instagram:hover {
+  color: rgb(245, 1, 205);
+}
+#main .container .sns li .fa-youtube:hover {
+  color: rgb(252, 3, 26);
+}
+#main .container .sns li .fa-tiktok:hover {
+  color: black;
+}
+#main .container .sns li:nth-child(2) {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+#main .container .sns li:nth-child(3) {
+  margin-right: 2%;
+}
+#main .container .sns li:nth-child(4) {
+  font-size: 2rem;
+}
+
+.loader {
+  display: none;
+}
+
+@media screen and (min-width: 525px) and (max-width: 1000px) {
+  .left-name-wrapper {
+    display: none;
+  }
+  .menu-trigger {
+    width: 55px;
+  }
+  .menu-trigger span {
+    width: 55px;
+  }
+  .sns {
+    width: 60% !important;
+  }
+  .navi {
+    display: block;
+  }
+  .g-navi {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    padding-top: 60px;
+    transform: translateY(-100vh);
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .g-navi ul {
+    display: block;
+  }
+  .g-navi ul li {
+    font-size: 3rem;
+    margin-top: 60px;
+  }
+  .g-navi.active {
+    transform: translateY(0%);
+    transition: 0.5s ease-in-out;
+  }
+  .g-navi-sp {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    z-index: 100;
+    top: 46px;
+    right: 7%;
+  }
+  /* ロゴエリア */
+  .sp-logo {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: "Prata", cursive;
+  }
+  /* ハンバーガーメニュー */
+  .menu-trigger {
+    position: relative;
+    width: 70px;
+    height: 47px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .menu-trigger span {
+    display: block;
+    position: absolute;
+    width: 70px;
+    border-bottom: solid 4px #fff;
+    border-radius: 3px;
+    transition: 0.35s ease-in-out;
+  }
+  .menu-trigger span:nth-child(1) {
+    top: 6px;
+  }
+  .menu-trigger span:nth-child(2) {
+    top: 26px;
+  }
+  .menu-trigger span:nth-child(3) {
+    top: 46px;
+  }
+  /* 1番上のspan要素をマイナス45度方向に回す */
+  .menu-trigger.active span:nth-child(1) {
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+  /* 2番目と3番目のspan要素を45度方向に回す */
+  .menu-trigger.active span:nth-child(2),
+.menu-trigger.active span:nth-child(3) {
+    top: 18px;
+    transform: rotate(45deg);
+  }
+  .top-nav {
+    display: none;
+  }
+  #top {
+    height: 100vh;
+    padding: 0;
+    border: none;
+  }
+  #top .container .title .title-top {
+    left: 0;
+    top: 80px;
+    flex-direction: column-reverse;
+  }
+  #top .container .title .title-top img {
+    height: 500px;
+    margin: 0 auto;
+  }
+  #top .container .title p {
+    position: relative;
+    top: 80px;
+  }
+  #top .container .sns {
+    display: block;
+    margin-top: 135px !important;
+  }
+  #top .container .sns {
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 0;
+  }
+  #top .container .sns li i {
+    font-size: 2.5rem;
+    transition: 0.5s;
+  }
+  #top .container .sns li .fa-twitter:hover {
+    color: rgb(29, 161, 241);
+  }
+  #top .container .sns li .fa-instagram:hover {
+    color: rgb(245, 1, 205);
+  }
+  #top .container .sns li .fa-youtube:hover {
+    color: rgb(252, 3, 26);
+  }
+  #top .container .sns li .fa-tiktok:hover {
+    color: black;
+  }
+  #top .container .sns li:nth-child(2) {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #top .container .sns li:nth-child(3) {
+    margin-right: 2%;
+  }
+  #top .container .sns li:nth-child(4) {
+    font-size: 2rem;
+  }
+  #main {
+    display: none;
+  }
+}
+@media screen and (max-width: 525px) {
+  .left-name-wrapper {
+    display: none;
+  }
+  .menu-trigger {
+    width: 55px;
+  }
+  .menu-trigger span {
+    width: 55px;
+  }
+  .sns {
+    width: 60% !important;
+  }
+  .g-navi-sp {
+    right: 0% !important;
+  }
+  .g-navi-sp .menu-trigger span {
+    width: 40px !important;
+  }
+  .g-navi-sp .menu-trigger span:nth-child(2) {
+    top: 19px;
+  }
+  .g-navi-sp .menu-trigger span:nth-child(3) {
+    top: 32px;
+  }
+  .nav-wrapper {
+    padding-top: 50px;
+  }
+  .nav-wrapper .nav-item {
+    margin-top: 40px !important;
+    text-align: right;
+  }
+  .nav-wrapper .nav-item a {
+    font-size: 2.5rem;
+  }
+  .menu-trigger.active span:nth-child(1) {
+    top: 19px;
+    transform: rotate(-45deg);
+  }
+  /* 2番目と3番目のspan要素を45度方向に回す */
+  .menu-trigger.active span:nth-child(2),
+.menu-trigger.active span:nth-child(3) {
+    top: 19px !important;
+    transform: rotate(45deg);
+  }
+  .sns {
+    width: 80% !important;
+  }
+  .sns li a i {
+    font-size: 2rem;
+  }
+  #main {
+    display: none;
+  }
+  .left-name-wrapper {
+    display: none;
+  }
+  .menu-trigger {
+    width: 55px;
+  }
+  .menu-trigger span {
+    width: 55px;
+  }
+  .sns {
+    width: 60% !important;
+  }
+  .navi {
+    display: block;
+  }
+  .g-navi {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    padding-top: 60px;
+    transform: translateY(-100vh);
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .g-navi ul {
+    display: block;
+  }
+  .g-navi ul li {
+    font-size: 3rem;
+    margin-top: 60px;
+  }
+  .g-navi.active {
+    transform: translateY(0%);
+    transition: 0.5s ease-in-out;
+  }
+  .g-navi-sp {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    z-index: 100;
+    top: 46px;
+    right: 7%;
+  }
+  /* ロゴエリア */
+  .sp-logo {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: "Prata", cursive;
+  }
+  /* ハンバーガーメニュー */
+  .menu-trigger {
+    position: relative;
+    width: 70px;
+    height: 47px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .menu-trigger span {
+    display: block;
+    position: absolute;
+    width: 70px;
+    border-bottom: solid 4px #fff;
+    border-radius: 3px;
+    transition: 0.35s ease-in-out;
+  }
+  .menu-trigger span:nth-child(1) {
+    top: 6px;
+  }
+  .menu-trigger span:nth-child(2) {
+    top: 26px;
+  }
+  .menu-trigger span:nth-child(3) {
+    top: 46px;
+  }
+  /* 1番上のspan要素をマイナス45度方向に回す */
+  .menu-trigger.active span:nth-child(1) {
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+  /* 2番目と3番目のspan要素を45度方向に回す */
+  .menu-trigger.active span:nth-child(2),
+.menu-trigger.active span:nth-child(3) {
+    top: 18px;
+    transform: rotate(45deg);
+  }
+  .top-nav {
+    display: none;
+  }
+  #top {
+    height: 100vh;
+    padding: 0;
+    border: none;
+  }
+  #top .container .title .title-top {
+    left: 0;
+    top: 160px;
+    flex-direction: column-reverse;
+  }
+  #top .container .title .title-top img {
+    height: 350px;
+    margin: 0 auto;
+  }
+  #top .container .title p {
+    position: relative;
+    top: 160px;
+  }
+  #top .container .sns {
+    display: block;
+    margin-top: 205px !important;
+  }
+  #top .container .sns {
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 0;
+  }
+  #top .container .sns li i {
+    font-size: 2.5rem;
+    transition: 0.5s;
+  }
+  #top .container .sns li .fa-twitter:hover {
+    color: rgb(29, 161, 241);
+  }
+  #top .container .sns li .fa-instagram:hover {
+    color: rgb(245, 1, 205);
+  }
+  #top .container .sns li .fa-youtube:hover {
+    color: rgb(252, 3, 26);
+  }
+  #top .container .sns li .fa-tiktok:hover {
+    color: black;
+  }
+  #top .container .sns li:nth-child(2) {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #top .container .sns li:nth-child(3) {
+    margin-right: 2%;
+  }
+  #top .container .sns li:nth-child(4) {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=index.css.map */

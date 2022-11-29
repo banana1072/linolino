@@ -1,0 +1,619 @@
+@charset "UTF-8";
+/*共通レイアウト*/
+/*レスポンシブ対応(スマホのみ)*/
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap");
+html {
+  font-size: 16px;
+  font-family: Arial Black;
+}
+
+body {
+  background-color: #FF99DE;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  overflow-x: hidden;
+}
+
+.left-name-wrapper {
+  position: fixed;
+}
+.left-name-wrapper .left-name {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  position: relative;
+  top: 50px;
+  left: 28%;
+  font-size: 8.5rem;
+  opacity: 0.5;
+  letter-spacing: 30px;
+  font-family: Arial;
+  font-weight: 900;
+}
+
+.g-navi {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  padding-top: 60px;
+  transform: translateY(-100vh);
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.g-navi ul {
+  display: block;
+}
+.g-navi ul li {
+  font-size: 3rem;
+  margin-top: 60px;
+}
+
+.g-navi.active {
+  transform: translateY(0%);
+  transition: 0.5s ease-in-out;
+}
+
+.g-navi-sp {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0;
+  z-index: 100;
+  top: 46px;
+  right: 7%;
+}
+
+/* ロゴエリア */
+.sp-logo {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 3px;
+  font-family: "Prata", cursive;
+}
+
+/* ハンバーガーメニュー */
+.menu-trigger {
+  position: relative;
+  width: 70px;
+  height: 47px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.menu-trigger span {
+  display: block;
+  position: absolute;
+  width: 70px;
+  border-bottom: solid 4px #fff;
+  border-radius: 3px;
+  transition: 0.35s ease-in-out;
+}
+
+.menu-trigger span:nth-child(1) {
+  top: 6px;
+}
+
+.menu-trigger span:nth-child(2) {
+  top: 26px;
+}
+
+.menu-trigger span:nth-child(3) {
+  top: 46px;
+}
+
+/* 1番上のspan要素をマイナス45度方向に回す */
+.menu-trigger.active span:nth-child(1) {
+  top: 18px;
+  transform: rotate(-45deg);
+}
+
+/* 2番目と3番目のspan要素を45度方向に回す */
+.menu-trigger.active span:nth-child(2),
+.menu-trigger.active span:nth-child(3) {
+  top: 18px;
+  transform: rotate(45deg);
+}
+
+.top-nav {
+  position: fixed;
+  width: 100%;
+  height: 0;
+  display: none;
+  cursor: pointer;
+}
+.top-nav img {
+  width: auto;
+  height: 80px;
+  position: relative;
+  top: 800px;
+  left: 43%;
+  z-index: 100;
+}
+
+footer {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding: 60px 0;
+  text-align: center;
+}
+footer .footer-top {
+  font-size: 1.5rem;
+}
+footer .footer-text {
+  margin: 30px 0;
+}
+footer .copyright {
+  font-weight: 100;
+}
+footer .copyright .fa-copyright {
+  padding-right: 2px;
+}
+
+.cp_hr07 {
+  position: relative;
+  overflow: visible;
+  text-align: center;
+  color: white;
+  border-width: 3px 0 0 0;
+  border-style: double;
+  border-color: white;
+  top: -60px;
+}
+
+.cp_hr07::after {
+  position: absolute;
+  top: -0.7em;
+  left: 49%;
+  display: inline-block;
+  background-color: #FF99DE;
+  content: "♡";
+}
+
+@font-face {
+  font-family: hosoji;
+  src: url("../font/hoso.ttf") format("opentype");
+}
+section {
+  padding-top: 70px;
+  font-family: Arial;
+}
+section h1 {
+  font-family: 筑紫A丸ゴシック;
+  font-size: 3.5rem;
+  letter-spacing: 10px;
+  font-weight: 900;
+  text-align: center;
+}
+section .sns {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-top: 0;
+}
+section .sns li i {
+  font-size: 2.5rem;
+  transition: 0.5s;
+}
+section .sns li .fa-twitter:hover {
+  color: rgb(29, 161, 241);
+}
+section .sns li .fa-instagram:hover {
+  color: rgb(245, 1, 205);
+}
+section .sns li .fa-youtube:hover {
+  color: rgb(252, 3, 26);
+}
+section .sns li .fa-tiktok:hover {
+  color: black;
+}
+section .sns li:nth-child(2) {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+section .sns li:nth-child(3) {
+  margin-right: 2%;
+}
+section .sns li:nth-child(4) {
+  font-size: 2rem;
+}
+section .about-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 100px;
+  margin-bottom: 70px;
+}
+section .about-wrapper .about-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+section .about-wrapper .about-top .about-top-left {
+  width: auto;
+  height: 550px;
+}
+section .about-wrapper .about-top .about-top-right {
+  width: 50%;
+}
+section .about-wrapper .about-top .about-top-right .top-head {
+  margin-bottom: 30px;
+}
+section .about-wrapper .about-top .about-top-right .top-head h1 {
+  margin-bottom: 10px;
+  font-size: 4.5rem;
+}
+section .about-wrapper .about-top .about-top-right .top-text {
+  width: 70%;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  line-height: 45px;
+  text-align: left;
+  font-family: hosoji;
+}
+section .about-wrapper .more-btn {
+  font-size: 3rem;
+  background-color: white;
+  color: #FF99DE;
+  border-radius: 40px;
+  padding: 7px 25px;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-bottom: 80px;
+}
+section .about-wrapper .more-btn .fa-arrow-down {
+  padding-right: 5px;
+  font-size: 2.5rem;
+  position: relative;
+  top: 2px;
+}
+section .about-wrapper .about-contents {
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 30px;
+  color: #707070;
+  font-family: Arial Hebrew;
+  font-weight: 100;
+  padding-bottom: 80px;
+  position: relative;
+}
+section .about-wrapper .about-contents .contents-head {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: 1px solid #707070;
+  letter-spacing: 2px;
+  font-family: "M PLUS Rounded 1c";
+}
+section .about-wrapper .about-contents .contents-text .content {
+  width: 91%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+section .about-wrapper .about-contents .contents-text .content .content-top {
+  display: flex;
+}
+section .about-wrapper .about-contents .contents-text .content .content-top h3 {
+  background-color: #FF99DE;
+  color: white;
+  border-radius: 60px;
+  font-size: 2rem;
+  padding: 40px 30px;
+  height: 116px;
+  z-index: 3;
+}
+section .about-wrapper .about-contents .contents-text .content .content-top h4 {
+  background-color: #FF99DE;
+  color: white;
+  border-radius: 60px;
+  font-size: 1.5rem;
+  padding: 32px 30px;
+  height: 90px;
+  margin-left: 4%;
+  position: relative;
+  top: 13px;
+  z-index: 3;
+}
+section .about-wrapper .about-contents .contents-text .content .content-top p {
+  width: 72%;
+  text-align: left;
+  font-size: 1.5rem;
+  position: relative;
+  top: 5px;
+  margin-left: 7%;
+  font-family: "M PLUS Rounded 1c";
+  line-height: 38px;
+  letter-spacing: 3px;
+}
+section .about-wrapper .about-contents .contents-text .content a {
+  height: 300px;
+  background-color: black;
+  display: inline-block;
+  margin-top: 50px;
+  position: relative;
+}
+section .about-wrapper .about-contents .contents-text .content a img {
+  width: auto;
+  height: 300px;
+  transition: 0.5s;
+}
+section .about-wrapper .about-contents .contents-text .content a .listen {
+  position: absolute;
+  top: 150px;
+  font-size: 1.5rem;
+  left: 38%;
+  opacity: 0;
+  transition: 0.5s;
+  font-family: "M PLUS Rounded 1c";
+}
+section .about-wrapper .about-contents .contents-text .content a:hover img {
+  opacity: 0.3;
+}
+section .about-wrapper .about-contents .contents-text .content a:hover .listen {
+  color: white;
+  opacity: 1;
+}
+section .about-wrapper .about-contents .contents-text .oko .content-top p {
+  top: 36px;
+}
+section .about-wrapper .about-contents .contents-text .oko a {
+  margin-top: 20px;
+}
+section .about-wrapper .about-contents .contents-text .journey .content-top p {
+  top: 35px;
+}
+section .about-wrapper .about-contents .contents-text .journey a {
+  margin-top: 20px;
+}
+section .about-wrapper .about-contents .contents-text .gift .content-top p {
+  top: 35px;
+}
+section .about-wrapper .about-contents .line {
+  display: inline-block;
+  border: 0.5px solid #707070;
+  height: 2800px;
+  position: absolute;
+  top: 107px;
+  left: 10%;
+}
+section .about-wrapper .about-contents .sec {
+  display: inline-block;
+  border: 0.5px solid #707070;
+  width: 10%;
+  height: 0;
+  position: absolute;
+  top: 2396px;
+  left: 14%;
+}
+
+.scroll_up {
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media screen and (min-width: 525px) and (max-width: 1000px) {
+  .left-name-wrapper {
+    display: none;
+  }
+  .g-navi-sp {
+    right: 4% !important;
+  }
+  .menu-trigger {
+    width: 55px;
+  }
+  .menu-trigger span {
+    width: 55px;
+  }
+  .sns {
+    width: 60% !important;
+  }
+  .about-wrapper .about-top img {
+    height: 350px !important;
+    margin-right: 10px;
+    position: relative;
+    top: 30px;
+  }
+  .about-wrapper .about-top .about-top-right .top-head h1 {
+    font-size: 3.5rem !important;
+    letter-spacing: 0;
+  }
+  .about-wrapper .about-top .about-top-right .top-text {
+    width: 100% !important;
+    font-size: 1.3rem !important;
+    letter-spacing: 0 !important;
+    line-height: 30px !important;
+  }
+  .more-btn {
+    display: none !important;
+  }
+  .about-contents {
+    width: 100% !important;
+  }
+  .about-contents h2 {
+    margin-left: 12% !important;
+    margin-right: 12% !important;
+  }
+  .about-contents .contents-text .content {
+    width: 95% !important;
+  }
+  .about-contents .contents-text .content .content-top h3 {
+    font-size: 1.7rem !important;
+    height: 105px !important;
+  }
+  .about-contents .contents-text .content .content-top p {
+    font-size: 1.1rem !important;
+    line-height: 30px !important;
+    width: 65% !important;
+  }
+  .about-contents .contents-text .content a {
+    display: inline-block;
+    margin: 0 auto !important;
+    margin-top: 30px !important;
+  }
+  .line {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 525px) {
+  .left-name-wrapper {
+    display: none;
+  }
+  .g-navi-sp {
+    right: 3% !important;
+  }
+  .g-navi-sp .menu-trigger {
+    width: 40px !important;
+  }
+  .g-navi-sp .menu-trigger span {
+    width: 40px !important;
+  }
+  .g-navi-sp .menu-trigger span:nth-child(2) {
+    top: 19px;
+  }
+  .g-navi-sp .menu-trigger span:nth-child(3) {
+    top: 32px;
+  }
+  .nav-wrapper {
+    padding-top: 50px;
+  }
+  .nav-wrapper .nav-item {
+    margin-top: 40px !important;
+    text-align: right;
+  }
+  .nav-wrapper .nav-item a {
+    font-size: 2.5rem;
+  }
+  .menu-trigger.active span:nth-child(1) {
+    top: 19px;
+    transform: rotate(-45deg);
+  }
+  /* 2番目と3番目のspan要素を45度方向に回す */
+  .menu-trigger.active span:nth-child(2),
+.menu-trigger.active span:nth-child(3) {
+    top: 19px !important;
+    transform: rotate(45deg);
+  }
+  .sns {
+    width: 80% !important;
+  }
+  .sns li a i {
+    font-size: 2rem;
+  }
+  section {
+    padding-top: 0;
+  }
+  section .about-wrapper {
+    padding-top: 60px;
+  }
+  .about-wrapper .about-top {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-wrapper .about-top img {
+    height: 350px !important;
+    position: relative;
+    top: 30px;
+  }
+  .about-wrapper .about-top .about-top-right {
+    width: 100% !important;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .about-wrapper .about-top .about-top-right .top-head h1 {
+    font-size: 3.5rem !important;
+    letter-spacing: 0;
+  }
+  .about-wrapper .about-top .about-top-right .top-text {
+    width: 100% !important;
+    font-size: 1.3rem !important;
+    letter-spacing: 0 !important;
+    line-height: 30px !important;
+  }
+  .more-btn {
+    display: none !important;
+  }
+  .about-contents {
+    width: 100% !important;
+  }
+  .about-contents h2 {
+    font-size: 1.5rem !important;
+    margin-left: 12% !important;
+    margin-right: 12% !important;
+    text-align: center !important;
+  }
+  .about-contents .contents-text .content {
+    width: 95% !important;
+  }
+  .about-contents .contents-text .content .content-top {
+    flex-direction: column !important;
+  }
+  .about-contents .contents-text .content .content-top h3 {
+    font-size: 1.7rem !important;
+    height: 105px !important;
+    width: 37% !important;
+    height: 24vw !important;
+    margin: 0 auto;
+    padding: 9vw 6vw !important;
+  }
+  .about-contents .contents-text .content .content-top h4 {
+    margin: 0 !important;
+    width: 31% !important;
+    height: 20vw !important;
+    margin: 0 auto !important;
+    padding: 7vw 6vw !important;
+  }
+  .about-contents .contents-text .content .content-top p {
+    margin-top: 10px !important;
+    font-size: 1.1rem !important;
+    line-height: 30px !important;
+    width: 90% !important;
+    margin: 0;
+    margin: 0 auto;
+    font-size: 0.9rem !important;
+  }
+  .about-contents .contents-text .content a {
+    display: inline-block;
+    margin: 0 auto !important;
+    margin-top: 30px !important;
+    height: 220px !important;
+  }
+  .about-contents .contents-text .content a img {
+    height: 220px !important;
+  }
+  .about-contents .contents-text .content a p {
+    top: 105px !important;
+  }
+  .about-contents .contents-text .oko a {
+    margin-top: 50px !important;
+  }
+  .about-contents .contents-text .journey a {
+    margin-top: 50px !important;
+  }
+  .line {
+    display: none !important;
+  }
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/*共通レイアウト*/
+/*レスポンシブ対応(スマホのみ)*/
+html {
+  font-size: 16px;
+  font-family: Arial Black;
+}
+
+body {
+  background-color: rgb(147, 193, 165);
+  color: white;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  overflow-x: hidden;
+}
+
+.left-name-wrapper {
+  position: fixed;
+}
+.left-name-wrapper .left-name {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  position: relative;
+  top: 50px;
+  left: 28%;
+  font-size: 8.5rem;
+  opacity: 0.5;
+  letter-spacing: 30px;
+  font-family: Arial;
+  font-weight: 900;
+}
+
+.g-navi {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  padding-top: 60px;
+  transform: translateY(-100vh);
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.g-navi ul {
+  display: block;
+}
+.g-navi ul li {
+  font-size: 3rem;
+  margin-top: 60px;
+}
+
+.g-navi.active {
+  transform: translateY(0%);
+  transition: 0.5s ease-in-out;
+}
+
+.g-navi-sp {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0;
+  z-index: 100;
+  top: 46px;
+  right: 7%;
+}
+
+/* ロゴエリア */
+.sp-logo {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 3px;
+  font-family: "Prata", cursive;
+}
+
+/* ハンバーガーメニュー */
+.menu-trigger {
+  position: relative;
+  width: 70px;
+  height: 47px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.menu-trigger span {
+  display: block;
+  position: absolute;
+  width: 70px;
+  border-bottom: solid 4px #fff;
+  border-radius: 3px;
+  transition: 0.35s ease-in-out;
+}
+
+.menu-trigger span:nth-child(1) {
+  top: 6px;
+}
+
+.menu-trigger span:nth-child(2) {
+  top: 26px;
+}
+
+.menu-trigger span:nth-child(3) {
+  top: 46px;
+}
+
+/* 1番上のspan要素をマイナス45度方向に回す */
+.menu-trigger.active span:nth-child(1) {
+  top: 18px;
+  transform: rotate(-45deg);
+}
+
+/* 2番目と3番目のspan要素を45度方向に回す */
+.menu-trigger.active span:nth-child(2),
+.menu-trigger.active span:nth-child(3) {
+  top: 18px;
+  transform: rotate(45deg);
+}
+
+.top-nav {
+  position: fixed;
+  width: 100%;
+  height: 0;
+  display: none;
+  cursor: pointer;
+}
+.top-nav img {
+  width: auto;
+  height: 80px;
+  position: relative;
+  top: 800px;
+  left: 43%;
+  z-index: 100;
+}
+
+.cp_hr07 {
+  position: relative;
+  overflow: visible;
+  text-align: center;
+  color: white;
+  border-width: 3px 0 0 0;
+  border-style: double;
+  border-color: white;
+  top: -60px;
+}
+
+.cp_hr07::after {
+  position: absolute;
+  top: -0.7em;
+  left: 49%;
+  display: inline-block;
+  background-color: rgb(147, 193, 165);
+  content: "♡";
+}
+
+@font-face {
+  font-family: hosoji;
+  src: url("../font/hoso.ttf") format("opentype");
+}
+body {
+  display: flex;
+}
+body .post_form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+form .field label {
+  display: block;
+  margin-bottom: 10px;
+}
+form .field .inputfield {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 6px 5px 3px 5px;
+  font-family: Arial Hebrew;
+  font-weight: 100;
+  width: 30%;
+  font-size: 1.5rem;
+  height: 40px;
+  text-align: left;
+}
+form .field .content {
+  width: 70%;
+  height: 500px;
+  font-size: 1rem;
+}
+form .field .submit {
+  border: 1px solid white;
+  padding: 10px 30px;
+  border-radius: 6px;
+}
+form .field:nth-child(2) {
+  margin-top: 40px;
+}
+form .field:nth-child(3) {
+  margin-top: 40px;
+}/*# sourceMappingURL=post_form.css.map */

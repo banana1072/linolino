@@ -1,0 +1,65 @@
+@import "common";
+@include common(rgb(147, 193, 165));
+@include footer;
+@include hr(rgb(147, 193, 165));
+section {
+    padding-top: 70px;
+    @include h-1;
+    @include sns;
+    .column-wrapper {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 40px;
+        .line {
+            width: 100%;
+            border: 1px solid white;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .text-contents {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 640px;
+            background-color: white;
+            color: black;
+            padding: 50px;
+            padding-bottom: 20px;
+            h2 {
+                -ms-writing-mode: tb-rl;
+                writing-mode: vertical-rl;
+                font-size: 2.0rem;
+                margin-left: 3%;
+            }
+            p {
+                -ms-writing-mode: tb-rl;
+                writing-mode: vertical-rl;
+                font-size: 1.0rem;
+                letter-spacing: 1px;
+                line-height: 55px;
+                overflow-x: scroll;
+                padding-bottom: 30px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:525px) and (max-width:1000px) {
+    @include sp_common;
+}
+
+@media screen and (max-width:525px) {
+    .left-name-wrapper {
+        display: none;
+    }
+    @include sp_nav_sns;
+    .column-wrapper {
+        width: 75%;
+    }
+    .text-contents {
+        padding: 50px 20px!important;
+        p {
+            line-height: 38px!important;
+        }
+    }
+}

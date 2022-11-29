@@ -1,0 +1,55 @@
+@import "common";
+@include common(rgb(147, 193, 165));
+@include hr(rgb(147, 193, 165));
+@font-face {
+    font-family: hosoji;
+    src: url('../font/hoso.ttf') format("opentype");
+}
+
+body {
+    display: flex;
+    .post_form {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/////////////縦書きにする//////////////////////
+form {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 100px;
+    .field {
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .inputfield {
+            border: 1px solid white;
+            border-radius: 3px;
+            padding: 6px 5px 3px 5px;
+            font-family: Arial Hebrew;
+            font-weight: 100;
+            width: 30%;
+            font-size: 1.5rem;
+            height: 40px;
+            text-align: left;
+        }
+        .content {
+            width: 70%;
+            height: 500px;
+            font-size: 1.0rem;
+        }
+        .submit {
+            border: 1px solid white;
+            padding: 10px 30px;
+            border-radius: 6px;
+        }
+    }
+    .field:nth-child(2) {
+        margin-top: 40px;
+    }
+    .field:nth-child(3) {
+        margin-top: 40px;
+    }
+}
