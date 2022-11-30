@@ -261,7 +261,7 @@ section .movie-wrapper .movie .movie-title {
 }
 section .movie-wrapper .movie .movie-title h2 {
   font-family: hebrew;
-  opacity: 0.5;
+  opacity: 0.8;
   width: 90%;
   margin: 0 auto;
 }
