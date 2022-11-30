@@ -2,16 +2,6 @@
 @include common(#97CBD5);
 @include footer;
 @include hr(#97CBD5);
-@font-face {
-    font-family: hebrew;
-    src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
-}
-
-@font-face {
-    font-family: ariblk;
-    src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
-}
-
 section {
     padding-top: 70px;
     @include h-1;
@@ -20,7 +10,7 @@ section {
         margin: 0 auto;
         ul {
             margin-top: 70px;
-            font-family: hebrew!important;
+            font-family: $jm!important;
             li {
                 border-bottom: 2px solid white;
                 display: flex;

@@ -3,21 +3,11 @@
         @include footer;
         @include hr(#FF99DE);
         @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap');
-        @font-face {
-            font-family: hebrew;
-            src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
-        }
-        
-        @font-face {
-            font-family: ariblk;
-            src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
-        }
-        
         section {
             padding-top: 70px;
             @include h-1;
             @include sns;
-            font-family: ariblk;
+            font-family: $ariblk;
             .about-wrapper {
                 width: 70%;
                 margin: 0 auto;
@@ -47,7 +37,7 @@
                             letter-spacing: 2px;
                             line-height: 45px;
                             text-align: left;
-                            font-family: hebrew;
+                            font-family: $jm;
                         }
                     }
                 }
@@ -73,7 +63,7 @@
                     background-color: white;
                     border-radius: 30px;
                     color: #707070;
-                    font-family: hebrew;
+                    font-family: $jm;
                     font-weight: 100;
                     padding-bottom: 80px;
                     position: relative;
@@ -87,7 +77,7 @@
                         margin-right: 10%;
                         border-bottom: 1px solid #707070;
                         letter-spacing: 2px;
-                        font-family: hebrew;
+                        font-family: $jm;
                     }
                     .contents-text {
                         .content {
@@ -104,7 +94,7 @@
                                     padding: 40px 17px;
                                     height: 116px;
                                     z-index: 3;
-                                    font-family: hebrew;
+                                    font-family: $jm;
                                 }
                                 h4 {
                                     background-color: #FF99DE;
@@ -117,7 +107,7 @@
                                     position: relative;
                                     top: 13px;
                                     z-index: 3;
-                                    font-family: hebrew;
+                                    font-family: $jm;
                                 }
                                 p {
                                     width: 72%;
@@ -126,7 +116,7 @@
                                     position: relative;
                                     top: 5px;
                                     margin-left: 7%;
-                                    font-family: hebrew;
+                                    font-family: $jm;
                                     line-height: 38px;
                                     letter-spacing: 3px;
                                 }
@@ -149,7 +139,7 @@
                                     left: 38%;
                                     opacity: 0;
                                     transition: .5s;
-                                    font-family: "M PLUS Rounded 1c";
+                                    font-family: $jm;
                                 }
                             }
                             a:hover {

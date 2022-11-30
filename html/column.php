@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/column.css">
     <link href="https://use.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://jpafonts.osdn.jp/webfonts/jpafonts.css" />
 
     <link rel="icon" type="image/x-icon" href="../img/rabbit.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../img/rabbit.png">

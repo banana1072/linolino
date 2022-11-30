@@ -1,6 +1,37 @@
 @charset "UTF-8";
 /*共通レイアウト*/
+/*
+JPA Font - The IPA Font Derived Program
+https://jpafonts.osdn.jp
+
+Licensed under the IPA Font License Agreement v1.0
+https://ipafont.ipa.go.jp/ipa_font_license_v1.html
+*/
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap");
+@font-face {
+  font-family: "JPAGothic";
+  src: url("jpag.woff2") format("woff2"), url("jpag.woff") format("woff"), url("jpag.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAPGothic";
+  src: url("jpagp.woff2") format("woff2"), url("jpagp.woff") format("woff"), url("jpagp.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAMincho";
+  src: url("jpam.woff2") format("woff2"), url("jpam.woff") format("woff"), url("jpam.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAPMincho";
+  src: url("jpamp.woff2") format("woff2"), url("jpamp.woff") format("woff"), url("jpamp.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAexGothic";
+  src: url("jpaexg.woff2") format("woff2"), url("jpaexg.woff") format("woff"), url("jpaexg.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAexMincho";
+  src: url("jpaexm.woff2") format("woff2"), url("jpaexm.woff") format("woff"), url("jpaexm.eot") format("eot");
+}
 @font-face {
   font-family: hebrew;
   src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
@@ -13,6 +44,7 @@
 html {
   font-size: 16px;
   font-family: ariblk !important;
+  overflow-x: hidden;
 }
 
 body {
@@ -165,7 +197,7 @@ footer .footer-top {
 }
 footer .footer-text {
   margin: 30px 0;
-  font-family: hebrew !important;
+  font-family: "JPAexGothic" !important;
 }
 footer .copyright {
   font-weight: 100;
@@ -194,14 +226,6 @@ footer .copyright .fa-copyright {
   content: "♡";
 }
 
-@font-face {
-  font-family: hebrew;
-  src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
-}
-@font-face {
-  font-family: ariblk;
-  src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
-}
 section {
   padding-top: 70px;
   font-family: ariblk;
@@ -278,7 +302,7 @@ section .about-wrapper .about-top .about-top-right .top-text {
   letter-spacing: 2px;
   line-height: 45px;
   text-align: left;
-  font-family: hebrew;
+  font-family: "JPAexGothic";
 }
 section .about-wrapper .more-btn {
   font-size: 3rem;
@@ -302,7 +326,7 @@ section .about-wrapper .about-contents {
   background-color: white;
   border-radius: 30px;
   color: #707070;
-  font-family: hebrew;
+  font-family: "JPAexGothic";
   font-weight: 100;
   padding-bottom: 80px;
   position: relative;
@@ -317,7 +341,7 @@ section .about-wrapper .about-contents .contents-head {
   margin-right: 10%;
   border-bottom: 1px solid #707070;
   letter-spacing: 2px;
-  font-family: hebrew;
+  font-family: "JPAexGothic";
 }
 section .about-wrapper .about-contents .contents-text .content {
   width: 91%;
@@ -335,7 +359,7 @@ section .about-wrapper .about-contents .contents-text .content .content-top h3 {
   padding: 40px 17px;
   height: 116px;
   z-index: 3;
-  font-family: hebrew;
+  font-family: "JPAexGothic";
 }
 section .about-wrapper .about-contents .contents-text .content .content-top h4 {
   background-color: #FF99DE;
@@ -348,7 +372,7 @@ section .about-wrapper .about-contents .contents-text .content .content-top h4 {
   position: relative;
   top: 13px;
   z-index: 3;
-  font-family: hebrew;
+  font-family: "JPAexGothic";
 }
 section .about-wrapper .about-contents .contents-text .content .content-top p {
   width: 72%;
@@ -357,7 +381,7 @@ section .about-wrapper .about-contents .contents-text .content .content-top p {
   position: relative;
   top: 5px;
   margin-left: 7%;
-  font-family: hebrew;
+  font-family: "JPAexGothic";
   line-height: 38px;
   letter-spacing: 3px;
 }
@@ -380,7 +404,7 @@ section .about-wrapper .about-contents .contents-text .content a .listen {
   left: 38%;
   opacity: 0;
   transition: 0.5s;
-  font-family: "M PLUS Rounded 1c";
+  font-family: "JPAexGothic";
 }
 section .about-wrapper .about-contents .contents-text .content a:hover img {
   opacity: 0.3;

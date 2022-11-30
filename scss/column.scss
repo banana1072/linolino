@@ -2,16 +2,6 @@
 @include common(rgb(147, 193, 165));
 @include footer;
 @include hr(rgb(147, 193, 165));
-@font-face {
-    font-family: hebrew;
-    src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
-}
-
-@font-face {
-    font-family: ariblk;
-    src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
-}
-
 section {
     padding-top: 70px;
     @include h-1;
@@ -39,7 +29,7 @@ section {
                 writing-mode: vertical-rl;
                 font-size: 2.0rem;
                 margin-left: 3%;
-                font-family: hebrew;
+                font-family: $jm;
             }
             p {
                 -ms-writing-mode: tb-rl;
@@ -50,7 +40,7 @@ section {
                 overflow-x: scroll;
                 padding-bottom: 30px;
                 text-align: left;
-                font-family: hebrew;
+                font-family: $jm;
             }
         }
     }

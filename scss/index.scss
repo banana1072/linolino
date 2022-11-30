@@ -1,20 +1,10 @@
 @import "common";
-@font-face {
-    font-family: hebrew;
-    src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
-}
-
-@font-face {
-    font-family: ariblk;
-    src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
-}
-
 
 /*-------------------------共通------------------------*/
 
 html {
     font-size: 16px;
-    font-family: ariblk;
+    font-family: $ariblk;
 }
 
 body {

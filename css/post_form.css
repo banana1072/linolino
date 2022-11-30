@@ -1,9 +1,49 @@
 @charset "UTF-8";
 /*共通レイアウト*/
+/*
+JPA Font - The IPA Font Derived Program
+https://jpafonts.osdn.jp
+
+Licensed under the IPA Font License Agreement v1.0
+https://ipafont.ipa.go.jp/ipa_font_license_v1.html
+*/
+@font-face {
+  font-family: "JPAGothic";
+  src: url("jpag.woff2") format("woff2"), url("jpag.woff") format("woff"), url("jpag.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAPGothic";
+  src: url("jpagp.woff2") format("woff2"), url("jpagp.woff") format("woff"), url("jpagp.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAMincho";
+  src: url("jpam.woff2") format("woff2"), url("jpam.woff") format("woff"), url("jpam.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAPMincho";
+  src: url("jpamp.woff2") format("woff2"), url("jpamp.woff") format("woff"), url("jpamp.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAexGothic";
+  src: url("jpaexg.woff2") format("woff2"), url("jpaexg.woff") format("woff"), url("jpaexg.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAexMincho";
+  src: url("jpaexm.woff2") format("woff2"), url("jpaexm.woff") format("woff"), url("jpaexm.eot") format("eot");
+}
+@font-face {
+  font-family: hebrew;
+  src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
+}
+@font-face {
+  font-family: ariblk;
+  src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
+}
 /*レスポンシブ対応(スマホのみ)*/
 html {
   font-size: 16px;
-  font-family: Arial Black;
+  font-family: ariblk !important;
+  overflow-x: hidden;
 }
 
 body {
@@ -35,8 +75,8 @@ body {
   font-size: 8.5rem;
   opacity: 0.5;
   letter-spacing: 30px;
-  font-family: Arial;
-  font-weight: 900;
+  font-weight: inherit;
+  font-family: ariblk !important;
 }
 
 .g-navi {
@@ -56,6 +96,9 @@ body {
 .g-navi ul li {
   font-size: 3rem;
   margin-top: 60px;
+}
+.g-navi ul li a {
+  font-family: ariblk;
 }
 
 .g-navi.active {

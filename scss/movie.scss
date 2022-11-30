@@ -1,16 +1,6 @@
 @import "common";
 @include common(#E89B6B);
 @include hr(#E89B68);
-@font-face {
-    font-family: hebrew;
-    src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
-}
-
-@font-face {
-    font-family: ariblk;
-    src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
-}
-
 section {
     padding-top: 70px;
     @include h-1;
@@ -19,14 +9,14 @@ section {
         font-size: 3.0rem;
         align-items: center;
         margin-bottom: 50px;
-        font-family: ariblk;
+        font-family: $ariblk;
         letter-spacing: 3px;
     }
     .movie-wrapper {
         width: 70%;
         margin: 0 auto;
         margin-top: 80px;
-        font-family: hebrew;
+        font-family: $jm;
         .movie {
             background-color: rgb(22, 22, 22);
             display: inline-block;
@@ -46,10 +36,10 @@ section {
                 text-align: center;
                 left: 25%;
                 top: 40%;
-                font-family: hosoji;
+                font-family: $jm;
                 font-size: 2.0rem;
                 h2 {
-                    font-family: hebrew;
+                    font-family: $jm;
                     opacity: 0.8;
                     width: 90%;
                     margin: 0 auto;
@@ -162,7 +152,7 @@ section {
         text-align: center;
         left: 23%!important;
         top: 40%!important;
-        font-family: hosoji;
+        font-family: $jm;
         font-size: 1.5rem!important;
     }
 }
@@ -184,7 +174,7 @@ section {
         text-align: center;
         left: 22%!important;
         top: 40%!important;
-        font-family: hosoji;
+        font-family: $jm;
         font-size: 1.5rem!important;
         .sircle {
             width: 60px!important;

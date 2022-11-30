@@ -2,16 +2,6 @@
 @include common(rgb(255, 120, 80));
 @include footer;
 @include hr(rgb(255, 120, 80));
-@font-face {
-    font-family: hebrew;
-    src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
-}
-
-@font-face {
-    font-family: ariblk;
-    src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
-}
-
 section {
     padding-top: 70px;
     @include h-1;
@@ -27,7 +17,7 @@ section {
                     border-bottom: 1px solid white;
                     display: flex;
                     justify-content: space-between;
-                    font-family: ariblk;
+                    font-family: $ariblk;
                     font-weight: 900;
                     width: 100%;
                     margin-bottom: 10px;
@@ -56,7 +46,7 @@ section {
                     }
                 }
                 .title-exp {
-                    font-family: hebrew;
+                    font-family: $jm;
                     text-align: left;
                     width: 100%;
                     font-weight: 100;

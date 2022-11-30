@@ -1,5 +1,36 @@
 @charset "UTF-8";
 /*共通レイアウト*/
+/*
+JPA Font - The IPA Font Derived Program
+https://jpafonts.osdn.jp
+
+Licensed under the IPA Font License Agreement v1.0
+https://ipafont.ipa.go.jp/ipa_font_license_v1.html
+*/
+@font-face {
+  font-family: "JPAGothic";
+  src: url("jpag.woff2") format("woff2"), url("jpag.woff") format("woff"), url("jpag.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAPGothic";
+  src: url("jpagp.woff2") format("woff2"), url("jpagp.woff") format("woff"), url("jpagp.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAMincho";
+  src: url("jpam.woff2") format("woff2"), url("jpam.woff") format("woff"), url("jpam.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAPMincho";
+  src: url("jpamp.woff2") format("woff2"), url("jpamp.woff") format("woff"), url("jpamp.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAexGothic";
+  src: url("jpaexg.woff2") format("woff2"), url("jpaexg.woff") format("woff"), url("jpaexg.eot") format("eot");
+}
+@font-face {
+  font-family: "JPAexMincho";
+  src: url("jpaexm.woff2") format("woff2"), url("jpaexm.woff") format("woff"), url("jpaexm.eot") format("eot");
+}
 @font-face {
   font-family: hebrew;
   src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
@@ -12,6 +43,7 @@
 html {
   font-size: 16px;
   font-family: ariblk !important;
+  overflow-x: hidden;
 }
 
 body {
@@ -164,7 +196,7 @@ footer .footer-top {
 }
 footer .footer-text {
   margin: 30px 0;
-  font-family: hebrew !important;
+  font-family: "JPAexGothic" !important;
 }
 footer .copyright {
   font-weight: 100;
@@ -193,14 +225,6 @@ footer .copyright .fa-copyright {
   content: "♡";
 }
 
-@font-face {
-  font-family: hebrew;
-  src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
-}
-@font-face {
-  font-family: ariblk;
-  src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
-}
 section {
   padding-top: 70px;
 }
@@ -269,7 +293,7 @@ section .column-wrapper .text-contents h2 {
   writing-mode: vertical-rl;
   font-size: 2rem;
   margin-left: 3%;
-  font-family: hebrew;
+  font-family: "JPAexGothic";
 }
 section .column-wrapper .text-contents p {
   -ms-writing-mode: tb-rl;
@@ -280,7 +304,7 @@ section .column-wrapper .text-contents p {
   overflow-x: scroll;
   padding-bottom: 30px;
   text-align: left;
-  font-family: hebrew;
+  font-family: "JPAexGothic";
 }
 
 @media screen and (min-width: 525px) and (max-width: 1000px) {
