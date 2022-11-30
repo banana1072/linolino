@@ -622,6 +622,7 @@ section .about-wrapper .about-contents .sec {
     padding: 9vw 6vw !important;
   }
   .about-contents .contents-text .content .content-top h4 {
+    font-size: 1.1rem !important;
     margin: 0 !important;
     width: 31% !important;
     height: 20vw !important;
