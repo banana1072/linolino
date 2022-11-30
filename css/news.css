@@ -1,9 +1,17 @@
 @charset "UTF-8";
 /*共通レイアウト*/
+@font-face {
+  font-family: hebrew;
+  src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
+}
+@font-face {
+  font-family: ariblk;
+  src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
+}
 /*レスポンシブ対応(スマホのみ)*/
 html {
   font-size: 16px;
-  font-family: Arial Black;
+  font-family: ariblk !important;
 }
 
 body {
@@ -35,8 +43,8 @@ body {
   font-size: 8.5rem;
   opacity: 0.5;
   letter-spacing: 30px;
-  font-family: Arial;
-  font-weight: 900;
+  font-weight: inherit;
+  font-family: ariblk !important;
 }
 
 .g-navi {
@@ -56,6 +64,9 @@ body {
 .g-navi ul li {
   font-size: 3rem;
   margin-top: 60px;
+}
+.g-navi ul li a {
+  font-family: ariblk;
 }
 
 .g-navi.active {
@@ -153,6 +164,7 @@ footer .footer-top {
 }
 footer .footer-text {
   margin: 30px 0;
+  font-family: hebrew !important;
 }
 footer .copyright {
   font-weight: 100;
@@ -181,11 +193,19 @@ footer .copyright .fa-copyright {
   content: "♡";
 }
 
+@font-face {
+  font-family: hebrew;
+  src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
+}
+@font-face {
+  font-family: ariblk;
+  src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
+}
 section {
   padding-top: 70px;
 }
 section h1 {
-  font-family: 筑紫A丸ゴシック;
+  font-family: ariblk;
   font-size: 3.5rem;
   letter-spacing: 10px;
   font-weight: 900;
@@ -197,13 +217,13 @@ section .news-wrapper {
 }
 section .news-wrapper ul {
   margin-top: 70px;
+  font-family: hebrew !important;
 }
 section .news-wrapper ul li {
   border-bottom: 2px solid white;
   display: flex;
   margin-bottom: 80px;
   padding-bottom: 10px;
-  font-family: Arial Black;
   font-weight: 900;
 }
 section .news-wrapper ul li p {
@@ -255,6 +275,9 @@ section .sns li:nth-child(4) {
 @media screen and (min-width: 525px) and (max-width: 1000px) {
   .left-name-wrapper {
     display: none;
+  }
+  .g-navi-sp {
+    right: 4% !important;
   }
   .menu-trigger {
     width: 55px;

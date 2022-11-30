@@ -1,10 +1,26 @@
 @charset "UTF-8";
 /*共通レイアウト*/
+@font-face {
+  font-family: hebrew;
+  src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
+}
+@font-face {
+  font-family: ariblk;
+  src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
+}
 /*レスポンシブ対応(スマホのみ)*/
+@font-face {
+  font-family: hebrew;
+  src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
+}
+@font-face {
+  font-family: ariblk;
+  src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
+}
 /*-------------------------共通------------------------*/
 html {
   font-size: 16px;
-  font-family: Arial Black;
+  font-family: ariblk;
 }
 
 body {
@@ -161,6 +177,9 @@ body {
   .left-name-wrapper {
     display: none;
   }
+  .g-navi-sp {
+    right: 4% !important;
+  }
   .menu-trigger {
     width: 55px;
   }
@@ -314,6 +333,9 @@ body {
   .left-name-wrapper {
     display: none;
   }
+  .g-navi-sp {
+    right: 4% !important;
+  }
   .menu-trigger {
     width: 55px;
   }
@@ -324,7 +346,10 @@ body {
     width: 60% !important;
   }
   .g-navi-sp {
-    right: 0% !important;
+    right: 3% !important;
+  }
+  .g-navi-sp .menu-trigger {
+    width: 40px !important;
   }
   .g-navi-sp .menu-trigger span {
     width: 40px !important;
@@ -366,6 +391,9 @@ body {
   }
   .left-name-wrapper {
     display: none;
+  }
+  .g-navi-sp {
+    right: 4% !important;
   }
   .menu-trigger {
     width: 55px;

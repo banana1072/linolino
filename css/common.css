@@ -1,3 +1,11 @@
 @charset "UTF-8";
 /*共通レイアウト*/
+@font-face {
+  font-family: hebrew;
+  src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
+}
+@font-face {
+  font-family: ariblk;
+  src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
+}
 /*レスポンシブ対応(スマホのみ)*//*# sourceMappingURL=common.css.map */

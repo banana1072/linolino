@@ -2,8 +2,13 @@
 @include common(#E89B6B);
 @include hr(#E89B68);
 @font-face {
-    font-family: hosoji;
-    src: url('../font/hoso.ttf') format("opentype");
+    font-family: hebrew;
+    src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: ariblk;
+    src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
 }
 
 section {
@@ -14,13 +19,14 @@ section {
         font-size: 3.0rem;
         align-items: center;
         margin-bottom: 50px;
-        font-family: 筑紫A丸ゴシック;
+        font-family: ariblk;
         letter-spacing: 3px;
     }
     .movie-wrapper {
         width: 70%;
         margin: 0 auto;
         margin-top: 80px;
+        font-family: hebrew;
         .movie {
             background-color: rgb(22, 22, 22);
             display: inline-block;
@@ -34,14 +40,20 @@ section {
                 display: block;
             }
             .movie-title {
-                width: 25%;
+                width: 50%;
                 margin: 0 auto;
                 position: absolute;
                 text-align: center;
-                left: 39%;
+                left: 25%;
                 top: 40%;
                 font-family: hosoji;
                 font-size: 2.0rem;
+                h2 {
+                    font-family: hebrew;
+                    opacity: 0.5;
+                    width: 90%;
+                    margin: 0 auto;
+                }
                 .sircle {
                     border: 1px solid white;
                     width: 90px;

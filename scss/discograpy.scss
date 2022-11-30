@@ -6,6 +6,20 @@
     src: url('../font/hoso.ttf') format("opentype");
 }
 
+@font-face {
+    font-family: hebrew;
+    src: url(../font/arialhebrew/hebrew/hebrew.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: ariblk;
+    src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
+}
+
+html {
+    font-family: hebrew;
+}
+
 @include hr(#93C1A5);
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap');
 .pop-up-z {
@@ -27,7 +41,7 @@
             top: 150px;
             border-radius: 20px;
             color: #707070;
-            font-family: "M PLUS Rounded 1c";
+            // font-family: "M PLUS Rounded 1c";
             h1 {
                 font-size: 3.0rem;
                 padding-top: 50px;
@@ -115,7 +129,7 @@ section {
     width: 70%;
     margin: 0 auto;
     margin-top: 80px;
-    font-family: "M PLUS Rounded 1c";
+    // font-family: "M PLUS Rounded 1c";
     .disc-content {
         display: flex;
         margin-bottom: 150px;
@@ -125,9 +139,11 @@ section {
                 font-size: 2.0rem;
                 display: inline-block;
                 margin-bottom: 40px;
+                font-family: ariblk;
             }
             ul {
                 margin-left: 32%;
+                font-family: hebrew;
                 li {
                     font-size: 1.5rem;
                     text-align: left;
@@ -142,6 +158,7 @@ section {
                 text-align: left;
                 line-height: 45px;
                 letter-spacing: 1px;
+                font-family: hebrew;
             }
             .text-top {
                 line-height: 35px;
@@ -175,6 +192,7 @@ section {
                 font-size: 2.5rem;
                 margin-bottom: 30px;
                 letter-spacing: 3px;
+                font-family: ariblk;
             }
             img {
                 width: auto;
@@ -278,6 +296,9 @@ section {
 }
 
 @media screen and(max-width:525px) {
+    html {
+        font-family: hebrew;
+    }
     .left-name-wrapper {
         display: none;
     }
