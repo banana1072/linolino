@@ -14,14 +14,14 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.8);
         .pop-up-wrapper {
-            width: 40vw;
+            width: 50vw;
             margin: 0 auto;
-            height: 40vw;
             background-color: white;
             position: relative;
             top: 150px;
             border-radius: 20px;
             color: #707070;
+            padding-bottom: 30px;
             // font-family: "M PLUS Rounded 1c";
             h1 {
                 font-size: 3.0rem;
@@ -32,7 +32,7 @@
                 cursor: pointer;
                 position: absolute;
                 top: 3vw;
-                left: 34vw;
+                right: 2vw;
                 width: 30px;
                 height: 30px;
                 .back-btn-left {
@@ -56,7 +56,8 @@
                 display: flex;
                 flex-direction: column;
                 text-align: left;
-                width: 60%;
+                width: 80%;
+                padding: 0 40px;
                 margin: 0 auto;
                 margin-top: 3vw;
                 font-size: 2.0rem;
@@ -279,6 +280,17 @@ section {
             height: 70vw!important;
         }
     }
+    .pop-up-wrapper {
+        width: 90vw!important;
+        .back-btn {
+            right: 2vw;
+        }
+        .link-correct {
+            a {
+                margin-bottom: 40px!important;
+            }
+        }
+    }
 }
 
 @media screen and(max-width:525px) {
@@ -332,6 +344,19 @@ section {
         }
         .right {
             flex-direction: column-reverse!important;
+        }
+    }
+    .pop-up-wrapper {
+        width: 90vw!important;
+        .back-btn {
+            right: 2vw;
+        }
+        .link-correct {
+            margin-top: 40px!important;
+            a {
+                margin-bottom: 40px!important;
+                font-size: 1.5rem!important;
+            }
         }
     }
 }
