@@ -303,6 +303,7 @@ section .live-wrapper ul li .title .title-top h2 {
   text-align: left;
 }
 section .live-wrapper ul li .title .fa-plus {
+  height: 30px;
   font-size: 2rem;
   cursor: pointer;
   transition: 0.5s;
@@ -316,6 +317,9 @@ section .live-wrapper ul li .title-exp {
   width: 100%;
   font-weight: 100;
   line-height: 25px;
+  display: none;
+}
+section .live-wrapper ul li .title-exp .sp_br {
   display: none;
 }
 section .live-wrapper ul li .title-exp a {
@@ -343,6 +347,9 @@ section .live-wrapper ul li .title-exp a:hover {
   .sns {
     width: 60% !important;
   }
+  .sp_br {
+    display: block !important;
+  }
   .live-wrapper ul li .title .title-top {
     flex-direction: column;
   }
@@ -362,6 +369,9 @@ section .live-wrapper ul li .title-exp a:hover {
 @media screen and (max-width: 525px) {
   .left-name-wrapper {
     display: none;
+  }
+  .sp_br {
+    display: block !important;
   }
   .g-navi-sp {
     right: 3% !important;

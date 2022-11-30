@@ -533,6 +533,9 @@ section .sns li:nth-child(4) {
     top: -30px !important;
     left: 24% !important;
   }
+  .img img {
+    height: 70vw !important;
+  }
 }
 @media screen and (max-width: 525px) {
   html {
@@ -596,7 +599,7 @@ section .sns li:nth-child(4) {
     margin-bottom: 15px;
   }
   .disc-wrapper .disc-content .img img {
-    height: 350px;
+    height: 70vw;
   }
   .disc-wrapper .disc-content .img span {
     margin-top: 15px;

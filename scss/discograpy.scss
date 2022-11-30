@@ -274,6 +274,11 @@ section {
         top: -30px!important;
         left: 24%!important;
     }
+    .img {
+        img {
+            height: 70vw!important;
+        }
+    }
 }
 
 @media screen and(max-width:525px) {
@@ -301,7 +306,7 @@ section {
                     margin-bottom: 15px;
                 }
                 img {
-                    height: 350px;
+                    height: 70vw;
                 }
                 span {
                     margin-top: 15px;

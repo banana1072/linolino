@@ -192,8 +192,11 @@ body {
                     left: 0;
                     top: 160px;
                     flex-direction: column-reverse;
+                    h1 {
+                        font-size: 3.7rem!important;
+                    }
                     img {
-                        height: 350px;
+                        height: 80vw!important;
                         margin: 0 auto;
                     }
                 }

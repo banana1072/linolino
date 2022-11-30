@@ -37,6 +37,7 @@ section {
                         }
                     }
                     .fa-plus {
+                        height: 30px;
                         font-size: 2rem;
                         cursor: pointer;
                         transition: .5s;
@@ -52,6 +53,9 @@ section {
                     font-weight: 100;
                     line-height: 25px;
                     display: none;
+                    .sp_br {
+                        display: none;
+                    }
                     a {
                         transition: .5s;
                         border-bottom: 1px solid white;
@@ -68,6 +72,9 @@ section {
 
 @media screen and (min-width:525px) and(max-width:1000px) {
     @include sp_common;
+    .sp_br {
+        display: block!important;
+    }
     .live-wrapper {
         ul {
             li {
@@ -96,6 +103,9 @@ section {
 @media screen and(max-width:525px) {
     .left-name-wrapper {
         display: none;
+    }
+    .sp_br {
+        display: block!important;
     }
     @include sp_nav_sns;
     .live-wrapper {
