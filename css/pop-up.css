@@ -1,0 +1,92 @@
+.pop-up-z {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 200;
+  display: none;
+}
+.pop-up-z .pop-up {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.pop-up-z .pop-up .pop-up-wrapper {
+  width: 50vw;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+  top: 150px;
+  border-radius: 20px;
+  color: #707070;
+  padding-bottom: 30px;
+}
+.pop-up-z .pop-up .pop-up-wrapper h1 {
+  font-size: 3rem;
+  padding-top: 50px;
+  letter-spacing: 2px;
+}
+.pop-up-z .pop-up .pop-up-wrapper .back-btn {
+  cursor: pointer;
+  right: 2vw;
+  position: absolute;
+  top: 3vw;
+  width: 30px;
+  height: 30px;
+}
+.pop-up-z .pop-up .pop-up-wrapper .back-btn .back-btn-left {
+  position: absolute;
+  display: inline-block;
+  height: 30px;
+  width: 0;
+  border: 1px solid #707070;
+  transform: rotate(45deg);
+}
+.pop-up-z .pop-up .pop-up-wrapper .back-btn .back-btn-right {
+  position: absolute;
+  display: inline-block;
+  height: 30px;
+  width: 0;
+  border: 1px solid #707070;
+  transform: rotate(-45deg);
+}
+.pop-up-z .pop-up .pop-up-wrapper .link-correct {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 80%;
+  padding: 0 40px;
+  margin: 0 auto;
+  margin-top: 3vw;
+  font-size: 2rem;
+}
+.pop-up-z .pop-up .pop-up-wrapper .link-correct a {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2.5vw;
+  letter-spacing: 0.5vw;
+}
+.pop-up-z .pop-up .pop-up-wrapper .link-correct a i {
+  padding-right: 1.5vw;
+  position: relative;
+  top: 0.2vw;
+}
+.pop-up-z .pop-up .pop-up-wrapper .link-correct a .fa-music {
+  color: #FA2C42;
+}
+.pop-up-z .pop-up .pop-up-wrapper .link-correct .am-m {
+  color: rgb(66, 0, 253);
+}
+.pop-up-z .pop-up .pop-up-wrapper .link-correct .sp {
+  color: rgb(35, 207, 95);
+}
+.pop-up-z .pop-up .pop-up-wrapper .link-correct .yo-m i {
+  color: rgb(255, 0, 0);
+}
+.pop-up-z .pop-up .pop-up-wrapper .link-correct .yo i {
+  color: rgb(255, 0, 0);
+}
+.pop-up-z .pop-up .pop-up-wrapper .link-correct .ln-m i {
+  color: rgb(0, 216, 102);
+}/*# sourceMappingURL=pop-up.css.map */
