@@ -3,6 +3,7 @@
         @include footer;
         @include hr(#FF99DE);
         @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap');
+        @import "pop-up";
         section {
             padding-top: 70px;
             @include h-1;
@@ -205,6 +206,7 @@
             transition: 0.8s ease-in-out;
             transform: translateY(30px);
             opacity: 0;
+            cursor: pointer;
         }
         
         .scroll_up.on {
@@ -212,8 +214,23 @@
             opacity: 1.0;
         }
         
+        .music-link {
+            display: none;
+        }
+        
         @media screen and (min-width:525px) and(max-width:1000px) {
             @include sp_common;
+            .pop-up-wrapper {
+                width: 90vw!important;
+                .back-btn {
+                    right: 2vw;
+                }
+                .link-correct {
+                    a {
+                        margin-bottom: 40px!important;
+                    }
+                }
+            }
             .about-wrapper {
                 .about-top {
                     img {
@@ -275,6 +292,19 @@
         }
         
         @media screen and(max-width:525px) {
+            .pop-up-wrapper {
+                width: 90vw!important;
+                .back-btn {
+                    right: 2vw;
+                }
+                .link-correct {
+                    margin-top: 40px!important;
+                    a {
+                        margin-bottom: 40px!important;
+                        font-size: 1.5rem!important;
+                    }
+                }
+            }
             .left-name-wrapper {
                 display: none;
             }

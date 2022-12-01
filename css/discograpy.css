@@ -255,9 +255,9 @@ footer .copyright .fa-copyright {
 }
 .pop-up-z .pop-up .pop-up-wrapper .back-btn {
   cursor: pointer;
+  right: 2vw;
   position: absolute;
   top: 3vw;
-  right: 2vw;
   width: 30px;
   height: 30px;
 }
