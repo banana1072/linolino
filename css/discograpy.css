@@ -436,7 +436,7 @@ section .sns li:nth-child(4) {
 }
 .disc-wrapper .disc-content .img img {
   width: auto;
-  height: 550px;
+  height: 35vw;
 }
 .disc-wrapper .disc-content .img span {
   cursor: pointer;

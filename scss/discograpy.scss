@@ -4,7 +4,6 @@
 @include hr(#93C1A5);
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap');
 @import "pop-up";
-
 section {
     padding-top: 70px;
     @include h-1;
@@ -82,7 +81,7 @@ section {
             }
             img {
                 width: auto;
-                height: 550px;
+                height: 35vw;
             }
             span {
                 cursor: pointer;
