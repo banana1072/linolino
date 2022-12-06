@@ -369,3 +369,30 @@
         transform: rotate(45deg);
     }
 }
+
+@media screen and (min-width:1000px) {
+    .tb-br {
+        display: none;
+    }
+    .sp-br {
+        display: none;
+    }
+}
+
+@media screen and (min-width:525px) and (max-width:1000px) {
+    .pc-br {
+        display: none;
+    }
+    .sp-br {
+        display: none;
+    }
+}
+
+@media screen and (max-width:525px) {
+    .pc-br {
+        display: none;
+    }
+    .tb-br {
+        display: none;
+    }
+}

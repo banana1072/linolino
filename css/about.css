@@ -41,6 +41,30 @@ https://ipafont.ipa.go.jp/ipa_font_license_v1.html
   src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
 }
 /*レスポンシブ対応(スマホのみ)*/
+@media screen and (min-width: 1000px) {
+  .tb-br {
+    display: none;
+  }
+  .sp-br {
+    display: none;
+  }
+}
+@media screen and (min-width: 525px) and (max-width: 1000px) {
+  .pc-br {
+    display: none;
+  }
+  .sp-br {
+    display: none;
+  }
+}
+@media screen and (max-width: 525px) {
+  .pc-br {
+    display: none;
+  }
+  .tb-br {
+    display: none;
+  }
+}
 html {
   font-size: 16px;
   font-family: ariblk !important;
@@ -376,10 +400,10 @@ section .about-wrapper .about-top {
 }
 section .about-wrapper .about-top .about-top-left {
   width: auto;
-  height: 550px;
+  height: 37vw;
 }
 section .about-wrapper .about-top .about-top-right {
-  width: 50%;
+  width: 55%;
 }
 section .about-wrapper .about-top .about-top-right .top-head {
   margin-bottom: 30px;
@@ -389,13 +413,13 @@ section .about-wrapper .about-top .about-top-right .top-head h1 {
   font-size: 4.5rem;
 }
 section .about-wrapper .about-top .about-top-right .top-text {
-  width: 70%;
-  font-size: 1.5rem;
+  width: 75%;
+  font-size: 1.3rem;
   margin: 0 auto;
-  letter-spacing: 2px;
   line-height: 45px;
   text-align: left;
   font-family: "JPAexGothic";
+  white-space: nowrap;
 }
 section .about-wrapper .more-btn {
   font-size: 3rem;
@@ -477,6 +501,7 @@ section .about-wrapper .about-contents .contents-text .content .content-top p {
   font-family: "JPAexGothic";
   line-height: 38px;
   letter-spacing: 3px;
+  cursor: default !important;
 }
 section .about-wrapper .about-contents .contents-text .content a {
   height: 300px;
@@ -595,6 +620,7 @@ section .about-wrapper .about-contents .sec {
     font-size: 1.3rem !important;
     letter-spacing: 0 !important;
     line-height: 30px !important;
+    white-space: normal !important;
   }
   .more-btn {
     display: none !important;
@@ -714,6 +740,7 @@ section .about-wrapper .about-contents .sec {
     font-size: 1.3rem !important;
     letter-spacing: 0 !important;
     line-height: 30px !important;
+    white-space: normal !important;
   }
   .more-btn {
     display: none !important;

@@ -20,10 +20,10 @@
                     margin-bottom: 70px;
                     .about-top-left {
                         width: auto;
-                        height: 550px;
+                        height: 37vw;
                     }
                     .about-top-right {
-                        width: 50%;
+                        width: 55%;
                         .top-head {
                             margin-bottom: 30px;
                             h1 {
@@ -32,13 +32,13 @@
                             }
                         }
                         .top-text {
-                            width: 70%;
-                            font-size: 1.5rem;
+                            width: 75%;
+                            font-size: 1.3rem;
                             margin: 0 auto;
-                            letter-spacing: 2px;
                             line-height: 45px;
                             text-align: left;
                             font-family: $jm;
+                            white-space: nowrap;
                         }
                     }
                 }
@@ -120,6 +120,7 @@
                                     font-family: $jm;
                                     line-height: 38px;
                                     letter-spacing: 3px;
+                                    cursor: default!important;
                                 }
                             }
                             a {
@@ -251,6 +252,7 @@
                             font-size: 1.3rem!important;
                             letter-spacing: 0!important;
                             line-height: 30px!important;
+                            white-space: normal!important;
                         }
                     }
                 }
@@ -339,6 +341,7 @@
                             font-size: 1.3rem!important;
                             letter-spacing: 0!important;
                             line-height: 30px!important;
+                            white-space: normal!important;
                         }
                     }
                 }

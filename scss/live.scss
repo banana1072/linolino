@@ -59,6 +59,7 @@ section {
                     a {
                         transition: .5s;
                         border-bottom: 1px solid white;
+                        word-wrap: break-word;
                     }
                     a:hover {
                         color: rgb(200, 200, 200);
