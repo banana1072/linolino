@@ -51,5 +51,8 @@ form {
     }
     .field:nth-child(3) {
         margin-top: 40px;
+        .form_return_btn {
+            margin-bottom: 30px;
+        }
     }
 }
