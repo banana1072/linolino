@@ -40,6 +40,30 @@ https://ipafont.ipa.go.jp/ipa_font_license_v1.html
   src: url(../font/arialhebrew/ariblk.ttf) format(opentype);
 }
 /*レスポンシブ対応(スマホのみ)*/
+@media screen and (min-width: 1000px) {
+  .tb-br {
+    display: none;
+  }
+  .sp-br {
+    display: none;
+  }
+}
+@media screen and (min-width: 525px) and (max-width: 1000px) {
+  .pc-br {
+    display: none;
+  }
+  .sp-br {
+    display: none;
+  }
+}
+@media screen and (max-width: 525px) {
+  .pc-br {
+    display: none;
+  }
+  .tb-br {
+    display: none;
+  }
+}
 html {
   font-size: 16px;
   font-family: ariblk !important;
@@ -541,9 +565,6 @@ footer .copyright .fa-copyright {
     position: relative;
     top: -12px;
     font-size: 1.1rem;
-  }
-  .movie:nth-last-child(-n+4) {
-    margin-bottom: 30px !important;
   }
   .music-exp {
     position: absolute;
