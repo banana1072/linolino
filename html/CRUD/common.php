@@ -1,9 +1,9 @@
 <?php
 header("X-FRAME-OPTIONS: DENY");
-define("HOST", "localhost");
-define("DB_NAME", "linolino");
-define("USER", "root");
-define("PASS", "root");
+define("HOST", "mysql208.phy.lolipop.lan");
+define("DB_NAME", "lLAA1455253-linolino");
+define("USER", "LAA1455253");
+define("PASS", "Linolino0206");
 $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET CHARACTER SET 'utf8'");
 $pdo = "";
 try{
